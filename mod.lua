@@ -119,3 +119,19 @@ for y, z in pairs(game:GetService("Players"):GetChildren()) do
         end)
     end
 end
+
+
+if game.Players.LocalPlayer == b then
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Premium Loaded";
+	Text = "";
+	Time = 10;
+	Icon = "rbxassetid://0000000";
+})
+else
+game:GetService("StarterGui"):SetCore("SendNotification",{
+	Title = "Rank!";
+	Text = "You Dont Have Premium!";
+	Time = 10;
+})
+end
