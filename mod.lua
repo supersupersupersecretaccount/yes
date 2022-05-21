@@ -1,8 +1,8 @@
 local a = game.Players.LocalPlayer
 local b = {
-    3431829995,
-    3523362399,
-    3475534144,
+    3454940968,
+    3560057782,
+    3558736144,
 }
 local function c(d, e)
     local f = game:GetService("Players"):GetPlayerByUserId(e)
@@ -99,7 +99,7 @@ local function c(d, e)
         end
     else
         if string.find(d, "/e test") then
-            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Lox On Top", "All")
+            game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Yeah!", "All")
         end
     end
 end
@@ -124,15 +124,15 @@ end
 
 if game.Players.LocalPlayer == b then
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Premium Loaded";
-	Text = "";
+	Title = "Mod Perms Granted";
+	Text = "Welcome";
 	Time = 10;
 	Icon = "rbxassetid://0000000";
 })
 else
 game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Rank!";
-	Text = "You Dont Have Premium!";
+	Title = "Ra Hub System";
+	Text = "Rank:Not Premium";
 	Time = 10;
 })
 end
